@@ -1,6 +1,6 @@
 import java.util.*;
 
-class TwoSum {
+public class TwoSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -21,7 +21,7 @@ class TwoSum {
 
             if (sum == target) {
                 System.out.println(a[st] + " " + a[end]);
-                break;
+                return;
             } 
             else if (sum < target) {
                 st++;
@@ -30,5 +30,7 @@ class TwoSum {
                 end--;
             }
         }
+
+        System.out.println("No pair found");
     }
 }

@@ -1,6 +1,7 @@
+
 import java.util.*;
 
-class VaildPalindrome{
+class ValidPalindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

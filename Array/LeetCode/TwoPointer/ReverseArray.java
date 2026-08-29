@@ -1,25 +1,26 @@
 import java.util.*;
 
-class ReverseString {
+public class ReverseArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        char[] s = new char[n];
+        int[] a = new int[n];
 
         for (int i = 0; i < n; i++)
-            s[i] = sc.next().charAt(0);
+            a[i] = sc.nextInt();
 
         int st = 0, end = n - 1;
 
         while (st < end) {
-            char temp = s[st];
-            s[st] = s[end];
-            s[end] = temp;
+            int temp = a[st];
+            a[st] = a[end];
+            a[end] = temp;
+
             st++;
             end--;
         }
 
-        System.out.println(Arrays.toString(s));
+        System.out.println(Arrays.toString(a));
     }
 }
